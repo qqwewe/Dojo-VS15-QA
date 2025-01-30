@@ -6,5 +6,7 @@ import java.text.SimpleDateFormat;
 
 public class DataFakerGeneretor {
 
+    Faker faker = new Faker();
+
 
 }
