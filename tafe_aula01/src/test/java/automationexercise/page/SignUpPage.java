@@ -16,6 +16,8 @@ public class SignUpPage extends BasePage {
     private static final By MONTH = By.cssSelector("#months");
     private static final By YEAR = By.cssSelector("#years");
     private static final By NEWSLETTER = By.cssSelector("#uniform-newsletter");
+    private static final By BTN_SUBMIT = By.cssSelector("#submitAccount");
+
 
     public void clickSignUpHomeButton(){
         clicar(SIGNUP_HOME);
@@ -49,6 +51,18 @@ public class SignUpPage extends BasePage {
 
    public void selectDayField(String day){
         selectDropDown(DAY, day);
+   }
+
+   public void selectMonthField(String month){
+        selectDropDown(MONTH, month);
+   }
+
+   public void selectYearField(String year){
+        selectDropDown(YEAR, year);
+   }
+
+   public void clickNewsletter(){
+        clicar(NEWSLETTER);
    }
 
 
