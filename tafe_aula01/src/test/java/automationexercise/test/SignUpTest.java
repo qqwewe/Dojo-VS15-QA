@@ -21,7 +21,7 @@ public class SignUpTest extends BaseTest{
         signUpPage.inputLastNameField(userData.getLastName());
         signUpPage.inputPasswordField(userData.getPassword());
         signUpPage.selectDayField(String.valueOf(userData.getDay()));
-        signUpPage.selectMonthField(userData.getMonth());
+        signUpPage.selectMonthField(String.valueOf(userData.getMonth()));
         signUpPage.selectYearField(String.valueOf(userData.getYear()));
         signUpPage.clickNewsletter();
         signUpPage.clickButtonSubmit();

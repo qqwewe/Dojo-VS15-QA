@@ -17,6 +17,7 @@ public class SignUpPage extends BasePage {
     private static final By YEAR = By.cssSelector("#years");
     private static final By NEWSLETTER = By.cssSelector("#uniform-newsletter");
     private static final By BUTTON_SUBMIT = By.cssSelector("#submitAccount");
+    private static final By MESSAGE_CREATE_SUCCESS = By.cssSelector("#center_column p.alert.alert-success");
 
 
     public void clickSignUpHomeButton(){

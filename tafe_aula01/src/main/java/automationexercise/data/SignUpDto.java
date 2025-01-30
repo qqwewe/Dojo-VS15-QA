@@ -14,7 +14,7 @@ public class SignUpDto {
     private String lastName;
     private String password;
     private Integer day;
-    private String month;
+    private Integer month;
     private Integer year;
 
     public SignUpDto() {
@@ -68,11 +68,11 @@ public class SignUpDto {
         this.day = day;
     }
 
-    public String getMonth() {
+    public Integer getMonth() {
         return month;
     }
 
-    public void setMonth(String month) {
+    public void setMonth(Integer month) {
         this.month = month;
     }
 

@@ -32,8 +32,8 @@ public class DataFakerGeneretor {
         return faker.number().numberBetween(1, 28);
     }
 
-    public static String gerarMesAleatorio(){
-        return faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    public static Integer gerarMesAleatorio(){
+        return faker.number().numberBetween(1, 12);
     }
 
     public static Integer gerarAnoAleatorio(){

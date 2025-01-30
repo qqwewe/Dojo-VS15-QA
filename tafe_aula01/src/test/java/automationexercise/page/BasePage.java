@@ -45,7 +45,7 @@ public class BasePage extends Elements {
         esperarElemento(by);
         clicar(by);
         Select select = new Select(element(by));
-        select.selectByVisibleText(option);
+        select.selectByValue(option);
     }
 
     static void SelectClick(By by) {
