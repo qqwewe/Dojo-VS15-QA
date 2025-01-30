@@ -43,7 +43,13 @@ public class BasePage extends Elements {
 
     static void selectDropDown(By by, String option){
         esperarElemento(by);
+        clicar(by);
         Select select = new Select(element(by));
         select.selectByVisibleText(option);
+    }
+
+    static void SelectClick(By by) {
+        esperarElemento(by);
+        element(by).click();
     }
 }

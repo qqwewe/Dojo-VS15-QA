@@ -24,7 +24,7 @@ public class SignUpTest extends BaseTest{
         signUpPage.selectMonthField(userData.getMonth());
         signUpPage.selectYearField(String.valueOf(userData.getYear()));
         signUpPage.clickNewsletter();
-        signUpPage.clic
+        signUpPage.clickButtonSubmit();
     }
 
 }
