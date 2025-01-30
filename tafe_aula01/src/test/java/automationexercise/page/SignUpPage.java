@@ -29,7 +29,29 @@ public class SignUpPage extends BasePage {
 
     public void clickTitleCheckboxButton(String title){
         if(title.equalsIgnoreCase("Mr")){
-
+            clicar(CHECKBOX_MR);
+        } else {
+            clicar(CHECKBOX_MRS);
         }
     }
+
+    public void inputFirstNameField(String firstName){
+        preencherInput(FIRST_NAME, firstName);
+    }
+
+    public void inputLastNameField(String lastName){
+        preencherInput(LAST_NAME, lastName);
+    }
+
+    public void inputPasswordField(String password){
+        preencherInput(PASSWORD, password);
+    }
+
+   public void selectDayField(String day){
+        selectDropDown(DAY, day);
+   }
+
+
+
+
 }

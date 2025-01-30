@@ -14,5 +14,8 @@ public class SignUpDto {
     private String firstName;
     private String lastName;
     private String password;
+    private Integer day;
+    private String month;
+    private Integer year;
 
 }

@@ -27,4 +27,17 @@ public class DataFakerGeneretor {
     public static Boolean gerarBooleanAleatorio(){
         return faker.bool().bool();
     }
+
+    public static Integer gerarDiaAleatorio(){
+        return faker.number().numberBetween(1, 28);
+    }
+
+    public static String gerarMesAleatorio(){
+        return faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    }
+
+    public static Integer gerarAnoAleatorio(){
+        return faker.number().numberBetween(1900,2025);
+    }
+
 }

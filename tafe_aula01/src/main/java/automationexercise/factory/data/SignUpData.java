@@ -18,6 +18,9 @@ public class SignUpData {
         }else {
             signUpDto.setTitle("Mrs");
         }
+        signUpDto.setDay(DataFakerGeneretor.gerarDiaAleatorio());
+        signUpDto.setMonth(DataFakerGeneretor.gerarMesAleatorio());
+        signUpDto.setYear(DataFakerGeneretor.gerarAnoAleatorio());
         return signUpDto;
     }
 }

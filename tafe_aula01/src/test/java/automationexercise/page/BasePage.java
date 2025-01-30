@@ -4,6 +4,7 @@ package automationexercise.page;
 import automationexercise.factory.seleniumfactory.Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
 
@@ -38,5 +39,11 @@ public class BasePage extends Elements {
     protected static void selecinoTab(By by){
         esperarElemento(by);
         element(by).sendKeys("\t");
+    }
+
+    static void selectDropDown(By by, String option){
+        esperarElemento(by);
+        Select select = new Select(element(by));
+        select.selectByVisibleText(option);
     }
 }
