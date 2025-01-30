@@ -17,7 +17,19 @@ public class SignUpPage extends BasePage {
     private static final By YEAR = By.cssSelector("#years");
     private static final By NEWSLETTER = By.cssSelector("#uniform-newsletter");
 
-    p
+    public void clickSignUpHomeButton(){
+        clicar(SIGNUP_HOME);
+    }
+    public void fillEmailField(String email){
+        preencherInput(CREATE_EMAIL, email);
+    }
+    public void clickCreateAccountButton(){
+        clicar(CREATE_ACOUNT);
+    }
 
+    public void clickTitleCheckboxButton(String title){
+        if(title.equalsIgnoreCase("Mr")){
 
+        }
+    }
 }
