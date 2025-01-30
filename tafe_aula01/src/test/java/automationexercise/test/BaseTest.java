@@ -9,7 +9,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void abrirNavegador(){
-        seleniumFactory.initBrowser("https://www.automationexercise.com/");
+        seleniumFactory.initBrowser("http://www.automationpractice.pl/index.php");
     }
 
 
