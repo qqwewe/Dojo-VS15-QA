@@ -10,7 +10,6 @@ public class SignInProvider {
                 {"Email@email.com", "Senha"},
                 {"testevalido@teste.com" ,"Senha"},
                 {"email@email.com","teste123"}
-
         };
     }
 }

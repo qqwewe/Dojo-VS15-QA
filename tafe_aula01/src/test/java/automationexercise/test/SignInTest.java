@@ -34,12 +34,12 @@ public class SignInTest extends BaseTest {
     }
 
     @Test(dataProvider = "invalidLoginData", dataProviderClass = SignInProvider.class)
-    public void testSignInInvalidUser() {
+    public void testSignInInvalidUser(String emailString, String stringSenha) {
         signInPage.clickSignUpHomeButton();
         String msg = signInPage.verifyAuthPage();
         Assert.assertEquals(msg, "AUTHENTICATION");
-        signInPage.fillEmail(user.getEmail());
-        signInPage.fillPassword(user.getPassword());
+        signInPage.fillEmail(emailString);
+        signInPage.fillPassword(stringSenha);
         signInPage.clickLoginButton();
         signInPage.clickSignOutButton();
     }
