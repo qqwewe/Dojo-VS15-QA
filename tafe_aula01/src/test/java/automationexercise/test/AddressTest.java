@@ -28,6 +28,7 @@ public class AddressTest
      headerPage.clickUserInfo();
      myAccountPage.clickMyAddress();
      addressesPage.clickButtonAddNewAddress();
+     addressPage.fillAddress();
 
  }
 }

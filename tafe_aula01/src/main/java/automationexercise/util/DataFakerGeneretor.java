@@ -40,4 +40,29 @@ public class DataFakerGeneretor {
         return faker.number().numberBetween(1900,2025);
     }
 
-}
+    public static String gerarEndereco(){
+        return faker.address().streetAddress();
+    }
+
+    public static String gerarCidade(){
+        return faker.address().city();
+    }
+
+    public static Integer gerarEstadoAleatorio(){
+        return faker.number().numberBetween(1,53);
+    }
+
+    public static String gerarZipCode(){
+        return faker.address().zipCode();
+    }
+
+    public static String gerarTelefoneDeCasa() {
+        return faker.phoneNumber().phoneNumber();
+    }
+
+    public static String gerarTelefoneCelular() {
+        return faker.phoneNumber().cellPhone();
+    }
+
+    }
+
