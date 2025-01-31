@@ -10,6 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static automationexercise.factory.data.SignInData.createSignInDto;
+import static automationexercise.factory.data.SignInData.createSignInvalid;
 
 public class SignInTest extends BaseTest {
     SignInPage signInPage = new SignInPage();
@@ -18,7 +19,7 @@ public class SignInTest extends BaseTest {
 
     @BeforeMethod
     public void signUp(){
-        UserDto user = createSignInDto();
+        UserDto user = createSignInvalid();
         signUpPage.singUpFlow(user);
     }
 
