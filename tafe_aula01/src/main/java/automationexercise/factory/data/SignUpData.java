@@ -1,14 +1,12 @@
 package automationexercise.factory.data;
 
-import automationexercise.data.SignUpDto;
+import automationexercise.data.UserDto;
 import automationexercise.util.DataFakerGeneretor;
-
-
 
 public class SignUpData {
 
-    public static SignUpDto createSignUpDto(){
-        SignUpDto signUpDto = new SignUpDto();
+    public static UserDto createSignUpDto(){
+        UserDto signUpDto = new UserDto();
         signUpDto.setEmail(DataFakerGeneretor.gerarEmailAleatorio());
         signUpDto.setFirstName(DataFakerGeneretor.gerarPrimeiroNomeAleatorio());
         signUpDto.setLastName(DataFakerGeneretor.gerarUltimoNomeAleatorio());
@@ -23,4 +21,5 @@ public class SignUpData {
         signUpDto.setYear(DataFakerGeneretor.gerarAnoAleatorio());
         return signUpDto;
     }
+
 }

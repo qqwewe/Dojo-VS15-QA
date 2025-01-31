@@ -50,10 +50,7 @@ public class SignUpPage extends BasePage {
         preencherInput(PASSWORD, password);
     }
 
-   public void selectDayField(String day){
-
-        selectDropDown(DAY, day);
-   }
+   public void selectDayField(String day){selectDropDown(DAY, day);}
 
    public void selectMonthField(String month){
         selectDropDown(MONTH, month);
@@ -71,6 +68,7 @@ public class SignUpPage extends BasePage {
         clicar(BUTTON_SUBMIT);
    }
 
+   public String verifySuccessMsg() {return  lerTexto(MESSAGE_CREATE_SUCCESS);}
 
 
 
