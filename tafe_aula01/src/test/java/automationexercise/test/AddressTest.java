@@ -40,8 +40,8 @@ public class AddressTest extends BaseTest
      addressPage.fillPhoneMobile(address.getPhoneMobile());
      addressPage.fillAddressTitle(address.getAlias());
      addressPage.clickButtonSave();
-
-     Thread.sleep(50000);
+     Assert.assertEquals(addressesPage.getTitleText(),"MY ADDRESSES");
 
  }
+
 }

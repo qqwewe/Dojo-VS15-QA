@@ -1,5 +1,6 @@
 package automationexercise.page;
 
+import automationexercise.data.UserDto;
 import org.openqa.selenium.By;
 
 public class SignUpPage extends BasePage {
@@ -28,6 +29,21 @@ public class SignUpPage extends BasePage {
     }
     public void clickCreateAccountButton(){
         clicar(CREATE_ACOUNT);
+    }
+
+    public void singUpFlow(UserDto userData){
+        clickSignUpHomeButton();
+        fillEmailField(userData.getEmail());
+       clickCreateAccountButton();
+       clickTitleCheckboxButton(userData.getTitle());
+       inputFirstNameField(userData.getFirstName());
+        inputLastNameField(userData.getLastName());
+        inputPasswordField(userData.getPassword());
+        selectDayField(String.valueOf(userData.getDay()));
+        selectMonthField(String.valueOf(userData.getMonth()));
+        selectYearField(String.valueOf(userData.getYear()));
+        clickNewsletter();
+        clickButtonSubmit();
     }
 
     public void clickTitleCheckboxButton(String title){
