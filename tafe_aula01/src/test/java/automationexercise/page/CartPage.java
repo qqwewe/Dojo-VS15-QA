@@ -13,4 +13,35 @@ public class CartPage extends BasePage{
     private static final By TEXT_SUCCESS_CHECKOUT = By.cssSelector("#cart_title");
     private static final By BUTTON_PROCEED_TO_CHECKOUT = By.cssSelector("a.button.btn.btn-default.standard-checkout.button-medium");
 
+    public void clicarPaginaWoman(){
+        clicar(WOMAN);
+    }
+
+    public void clicarAdicionarProduto(){
+        clicar(PRODUTO);
+    }
+
+    public void selecionarCorDoProduto(){
+        clicar(SELECTOR_WHITE);
+    }
+
+    public void clicarAddCart(){
+        clicar(BUTTON_ADD_CART);
+    }
+
+    public void clicarCheckout(){
+        clicar(BUTTON_CHECKOUT);
+    }
+
+    public void clicarProceedToCheckout(){
+        clicar(BUTTON_PROCEED_TO_CHECKOUT);
+    }
+
+    public String lerSucessoAoAdicionarProduto(){
+        return lerTexto(TEXT_SUCCESS_ADD_CART);
+    }
+
+    public String lerSucessoAoCheckout(){
+        return lerTexto(TEXT_SUCCESS_CHECKOUT);
+    }
 }

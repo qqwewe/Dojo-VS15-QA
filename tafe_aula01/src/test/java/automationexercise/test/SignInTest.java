@@ -17,14 +17,10 @@ public class SignInTest extends BaseTest {
     SignUpPage signUpPage = new SignUpPage();
     UserDto user;
 
-    @BeforeMethod
-    public void signUp(){
-        UserDto user = createSignInvalid();
-        signUpPage.singUpFlow(user);
-    }
-
     @Test
     public void testSignInValidUser() {
+        UserDto useer = createSignInDto();
+        signUpPage.singUpFlow(user);
         signInPage.clickSignUpHomeButton();
         String msg = signInPage.verifyAuthPage();
         Assert.assertEquals(msg, "AUTHENTICATION");
@@ -44,5 +40,7 @@ public class SignInTest extends BaseTest {
         signInPage.clickLoginButton();
         signInPage.clickSignOutButton();
     }
+
+
 
 }

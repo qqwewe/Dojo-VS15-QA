@@ -1,7 +1,5 @@
 package automationexercise.test;
 
-public class CartTest extends BaseTest
-{
-
+public class CartTest extends BaseTest {
 
 }
