@@ -19,9 +19,9 @@ public class AddressPage extends BasePage{
         selectDropDown(FORM_STATE, idState);
     }
     public void fillZipCode(String zipCode){preencherInput(FORM_ZIP_CODE, zipCode);}
-    public void fillphoneHome(String home){preencherInput(FORM_PHONE_HOME, home);}
-    public void fillphoneMobile(String mobile){preencherInput(FORM_PHONE_MOBILE, mobile);}
-    public void clickbuttonSave(){
+    public void fillPhoneHome(String home){preencherInput(FORM_PHONE_HOME, home);}
+    public void fillPhoneMobile(String mobile){preencherInput(FORM_PHONE_MOBILE, mobile);}
+    public void clickButtonSave(){
         clicar(BUTTON_SAVE);
     }
 }

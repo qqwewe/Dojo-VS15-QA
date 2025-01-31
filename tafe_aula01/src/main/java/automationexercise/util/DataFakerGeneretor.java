@@ -3,10 +3,11 @@ package automationexercise.util;
 import com.github.javafaker.Faker;
 
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class DataFakerGeneretor {
 
-    static Faker faker = new Faker();
+    static Faker faker = new Faker(Locale.US);
 
     public static String gerarEmailAleatorio(){
         return faker.internet().emailAddress();
@@ -53,11 +54,11 @@ public class DataFakerGeneretor {
     }
 
     public static String gerarZipCode(){
-        return faker.address().zipCode();
+        return faker.bothify("#####");
     }
 
     public static String gerarTelefoneDeCasa() {
-        return faker.phoneNumber().phoneNumber();
+        return faker.bothify("####-####");
     }
 
     public static String gerarTelefoneCelular() {
