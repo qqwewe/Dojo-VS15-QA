@@ -4,24 +4,24 @@ import org.openqa.selenium.By;
 
 public class AddressPage extends BasePage{
 
-    private static final By form_address = By.cssSelector("#address1");
-    private static final By form_city = By.cssSelector("#city");
-    private static final By form_state = By.cssSelector("#id_state");
-    private static final By form_zipCode = By.cssSelector("#postcode");
-    private static final By form_phoneHome = By.cssSelector("#phone");
-    private static final By form_phoneMobile = By.cssSelector("#phone_mobile");
-    private static final By form_buttonSave = By.cssSelector("#submitAddress > span");
+    private static final By FORM_ADDRESS = By.cssSelector("#address1");
+    private static final By FORM_CITY = By.cssSelector("#city");
+    private static final By FORM_STATE = By.cssSelector("#id_state");
+    private static final By FORM_ZIP_CODE = By.cssSelector("#postcode");
+    private static final By FORM_PHONE_HOME = By.cssSelector("#phone");
+    private static final By FORM_PHONE_MOBILE = By.cssSelector("#phone_mobile");
+    private static final By BUTTON_SAVE = By.cssSelector("#submitAddress > span");
 
 
-    public void fillAddress(String address1){preencherInput(form_address, address1);}
-    public void fillCity(String city){preencherInput(form_city, city);}
+    public void fillAddress(String address1){preencherInput(FORM_ADDRESS, address1);}
+    public void fillCity(String city){preencherInput(FORM_CITY, city);}
     public void clickState(){
-        clicar(form_state);
+        clicar(FORM_STATE);
     }
-    public void fillZipCode(String zipCode){preencherInput(form_zipCode, zipCode);}
-    public void fillphoneHome(String home){preencherInput(form_phoneHome, home);}
-    public void fillphoneMobile(String mobile){preencherInput(form_phoneMobile, mobile);}
+    public void fillZipCode(String zipCode){preencherInput(FORM_ZIP_CODE, zipCode);}
+    public void fillphoneHome(String home){preencherInput(FORM_PHONE_HOME, home);}
+    public void fillphoneMobile(String mobile){preencherInput(FORM_PHONE_MOBILE, mobile);}
     public void clickbuttonSave(){
-        clicar(form_buttonSave);
+        clicar(BUTTON_SAVE);
     }
 }
