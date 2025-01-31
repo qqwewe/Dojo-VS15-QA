@@ -34,9 +34,9 @@ public class SignUpPage extends BasePage {
     public void singUpFlow(UserDto userData){
         clickSignUpHomeButton();
         fillEmailField(userData.getEmail());
-       clickCreateAccountButton();
-       clickTitleCheckboxButton(userData.getTitle());
-       inputFirstNameField(userData.getFirstName());
+        clickCreateAccountButton();
+        clickTitleCheckboxButton(userData.getTitle());
+        inputFirstNameField(userData.getFirstName());
         inputLastNameField(userData.getLastName());
         inputPasswordField(userData.getPassword());
         selectDayField(String.valueOf(userData.getDay()));

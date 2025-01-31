@@ -25,7 +25,6 @@ public class AddressTest extends BaseTest
      signInPage.clickSignUpHomeButton();
      String msg = signInPage.verifyAuthPage();
      Assert.assertEquals(msg, "AUTHENTICATION");
-
      signInPage.fillEmail(user.getEmail());
      signInPage.fillPassword(user.getPassword());
      signInPage.clickLoginButton();
