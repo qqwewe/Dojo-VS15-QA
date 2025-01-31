@@ -15,5 +15,6 @@ public class AddressDto {
     private String zipCode;
     private String phoneHome;
     private String phoneMobile;
+    private String alias;
 
 }

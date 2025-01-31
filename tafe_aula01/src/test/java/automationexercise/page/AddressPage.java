@@ -11,6 +11,7 @@ public class AddressPage extends BasePage{
     private static final By FORM_PHONE_HOME = By.cssSelector("#phone");
     private static final By FORM_PHONE_MOBILE = By.cssSelector("#phone_mobile");
     private static final By BUTTON_SAVE = By.cssSelector("#submitAddress > span");
+    private static final By FORM_ADDRESS_TITLE = By.cssSelector("#alias");
 
 
     public void fillAddress(String address1){preencherInput(FORM_ADDRESS, address1);}
@@ -23,5 +24,9 @@ public class AddressPage extends BasePage{
     public void fillPhoneMobile(String mobile){preencherInput(FORM_PHONE_MOBILE, mobile);}
     public void clickButtonSave(){
         clicar(BUTTON_SAVE);
+    }
+    public void fillAddressTitle(String alias) {
+        limparCampo(FORM_ADDRESS_TITLE);
+        preencherInput(FORM_ADDRESS_TITLE, alias);
     }
 }

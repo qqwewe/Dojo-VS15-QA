@@ -28,6 +28,11 @@ public class BasePage extends Elements {
         element(by).click();
     }
 
+    static void limparCampo(By by) {
+        esperarElemento(by);
+        element(by).clear();
+    }
+
     static void verificarElemento(By by) {
         esperarElemento(by);
     }

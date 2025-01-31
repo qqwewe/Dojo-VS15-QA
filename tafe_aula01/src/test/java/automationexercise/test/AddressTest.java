@@ -38,6 +38,7 @@ public class AddressTest extends BaseTest
      addressPage.fillZipCode(address.getZipCode());
      addressPage.fillPhoneHome(address.getPhoneHome());
      addressPage.fillPhoneMobile(address.getPhoneMobile());
+     addressPage.fillAddressTitle(address.getAlias());
      addressPage.clickButtonSave();
 
      Thread.sleep(50000);

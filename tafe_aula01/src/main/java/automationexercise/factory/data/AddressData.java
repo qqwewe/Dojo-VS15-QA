@@ -16,6 +16,7 @@ public class AddressData {
         addressDto.setZipCode(dataFakerGeneretor.gerarZipCode());
         addressDto.setPhoneHome(dataFakerGeneretor.gerarTelefoneDeCasa());
         addressDto.setPhoneMobile(dataFakerGeneretor.gerarTelefoneCelular());
+        addressDto.setAlias(dataFakerGeneretor.gerarFraseAleatoria());
         return addressDto;
     }
 }

@@ -65,5 +65,9 @@ public class DataFakerGeneretor {
         return faker.phoneNumber().cellPhone();
     }
 
+    public static String gerarFraseAleatoria() {
+        return faker.lorem().sentence(1);
+    }
+
     }
 
