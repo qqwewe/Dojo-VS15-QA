@@ -1,10 +1,12 @@
 package automationexercise.test;
 
+import automationexercise.data.AddressDto;
 import automationexercise.data.UserDto;
 import automationexercise.page.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static automationexercise.factory.data.AddressData.createAddressData;
 import static automationexercise.factory.data.SignInData.createSignInDto;
 
 public class AddressTest
@@ -18,6 +20,7 @@ public class AddressTest
  @Test
     public void testAddAddress(){
      UserDto user = createSignInDto();
+     AddressDto address = createAddressData();
      signInPage.clickSignUpHomeButton();
      String msg = signInPage.verifyAuthPage();
      Assert.assertEquals(msg, "AUTHENTICATION");
@@ -28,7 +31,9 @@ public class AddressTest
      headerPage.clickUserInfo();
      myAccountPage.clickMyAddress();
      addressesPage.clickButtonAddNewAddress();
-     addressPage.fillAddress();
+     addressPage.fillAddress(address.getAddress());
+     addressPage.fillCity(address.getCity());
+     addressPage.clickState(String);
 
  }
 }

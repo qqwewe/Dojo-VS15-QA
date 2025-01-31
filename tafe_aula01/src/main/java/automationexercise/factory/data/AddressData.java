@@ -5,11 +5,17 @@ import automationexercise.util.DataFakerGeneretor;
 
 public class AddressData {
 
+    static DataFakerGeneretor dataFakerGeneretor = new DataFakerGeneretor();
+
     public static AddressDto createAddressData(){
-        DataFakerGeneretor dataFakerGeneretor = new DataFakerGeneretor();
 
         AddressDto addressDto = new AddressDto();
-        addressDto.getAddress(dataFakerGeneretor.gerar)
-
+        addressDto.setAddress(dataFakerGeneretor.gerarEndereco());
+        addressDto.setCity(dataFakerGeneretor.gerarCidade());
+        addressDto.setState(dataFakerGeneretor.gerarEstadoAleatorio());
+        addressDto.setZipCode(dataFakerGeneretor.gerarZipCode());
+        addressDto.setPhoneHome(dataFakerGeneretor.gerarTelefoneDeCasa());
+        addressDto.setPhoneMobile(dataFakerGeneretor.gerarTelefoneCelular());
+        return addressDto;
     }
 }

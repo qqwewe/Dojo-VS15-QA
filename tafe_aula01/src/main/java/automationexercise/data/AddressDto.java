@@ -11,7 +11,7 @@ public class AddressDto {
 
     private String address;
     private String city;
-    private String state;
+    private Integer state;
     private String zipCode;
     private String phoneHome;
     private String phoneMobile;
