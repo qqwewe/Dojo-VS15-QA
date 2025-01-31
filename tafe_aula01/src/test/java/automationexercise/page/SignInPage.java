@@ -10,10 +10,10 @@ import org.openqa.selenium.By;
 //@AllArgsConstructor
 public class SignInPage extends BasePage {
 
-    public static final By MESSAGE_AUTH_PAGE = By.cssSelector("#center_column > h1");
-    public static final By INPUT_EMAIL = By.cssSelector("#email");
-    public static final By INPUT_PASSWORD = By.cssSelector("#passwd");
-    public static final By BUTTON_LOGIN = By.cssSelector("#SubmitLogin > span");
+    private static final By MESSAGE_AUTH_PAGE = By.cssSelector("#center_column > h1");
+    private static final By INPUT_EMAIL = By.cssSelector("#email");
+    private static final By INPUT_PASSWORD = By.cssSelector("#passwd");
+    private static final By BUTTON_LOGIN = By.cssSelector("#SubmitLogin > span");
     private static final By SIGNUP_HOME = By.cssSelector("div.header_user_info > a");
     private static final By BUTTON_LOGOUT = By.cssSelector("div:nth-child(2) > a");
 
