@@ -2,7 +2,6 @@ package automationexercise.factory.data;
 
 import automationexercise.data.UserDto;
 import automationexercise.util.DataFakerGeneretor;
-import com.github.javafaker.Faker;
 
 public class SignInData {
 
