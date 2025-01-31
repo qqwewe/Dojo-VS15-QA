@@ -15,10 +15,12 @@ public class SignInTest extends BaseTest {
         UserDto user = createSignInDto();
         signInPage.clickSignUpHomeButton();
         String msg = signInPage.verifyAuthPage();
-        Assert.assertEquals(msg);
+        Assert.assertEquals(msg, "AUTHENTICATION");
 
         signInPage.fillEmail(user.getEmail());
         signInPage.fillPassword(user.getPassword());
         signInPage.clickLoginButton();
+        signInPage.clickSignOutButton();
     }
+
 }

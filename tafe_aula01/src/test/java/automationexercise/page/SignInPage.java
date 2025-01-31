@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 import org.openqa.selenium.By;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class SignInPage extends BasePage {
 
     public static final By MESSAGE_AUTH_PAGE = By.cssSelector("#center_column > h1");
@@ -15,6 +15,7 @@ public class SignInPage extends BasePage {
     public static final By INPUT_PASSWORD = By.cssSelector("#passwd");
     public static final By BUTTON_LOGIN = By.cssSelector("#SubmitLogin > span");
     private static final By SIGNUP_HOME = By.cssSelector("div.header_user_info > a");
+    private static final By BUTTON_LOGOUT = By.cssSelector("div:nth-child(2) > a");
 
     public void fillEmail(String email) {
         preencherInput(INPUT_EMAIL, email);
@@ -34,6 +35,9 @@ public class SignInPage extends BasePage {
 
     public void clickSignUpHomeButton() {
         clicar(SIGNUP_HOME);
+    }
+    public void clickSignOutButton(){
+        clicar(BUTTON_LOGOUT);
     }
 
 }
